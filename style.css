@@ -1,0 +1,413 @@
+*{
+    background-image: url(/bg.jpeg);
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+color: white;
+}
+#element{
+    color: rgb(49, 243, 130);
+    margin-left: 40px;
+    font-weight: bolder;
+    font-size: 3rem;
+
+
+}
+ul li a:hover{
+    color: rgb(4, 216, 39);
+    font-size: 1.2em;
+   transition: 0.3s;
+   font-weight: bolder;
+    
+    
+}
+div h1:hover{
+ color: rgb(49, 243, 130);
+ font-size: 50px;
+ transition: 0.3s ;
+ font-weight: bolder;
+}
+.sec{
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #2c2c88;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  margin-left: 20px;
+}
+
+.sec:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #09bd27;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.sec:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.sec span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding:50px
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.sec:hover span {
+  color: #ffffff;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+#intro{
+    margin-top: 150px;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+/* skills */
+ .skill h2{
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 16px;
+ }
+ .bar{
+  width: 600px;
+  height: 10px;
+  border-radius: 5px;
+ }
+ .bar div{
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+  background-color: rgb(9, 255, 50);
+ }
+ .bar div span{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  float: right;
+  margin-top: -15px;
+  margin-right: -20px;
+  color: #2598f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ .html{
+  background: #3e91e6;
+  animation: html 1s linear forwards;
+ }
+ .CSS{
+  background: #cddc39;
+  animation: CSS 1s linear forwards;
+ }
+ .JAVASCRIPT{
+  background: #00bcd4;
+  animation: JAVASCRIPT 1s linear forwards;
+ }
+ .REACTJS{
+  background: #9c27b0;
+  animation: REACTJS 1s linear forwards;
+ }
+ .html span{
+  border: 1px solid #3e91e6 ;
+ }
+ .CSS span{
+  border: 1px solid #cddc39 ;
+ }
+ .JAVASCRIPT span{
+  border: 1px solid #00bcd4;
+
+ }
+ .REACTJS span{
+  border: 1px solid #9c27b0; ;
+ }
+ @keyframes html{
+  100%{
+    width: 90%;
+  }}
+
+  @keyframes CSS{
+    100%{
+      width: 50%;
+    }}
+    @keyframes JAVASCRIPT{
+      100%{
+        width: 70%;
+      }}
+      @keyframes REACTJS{
+        100%{
+          width: 50%;
+        }
+ }
+ /* SKILL END HERE */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+   
+}
+h1{
+    font-size: 21px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+section {
+    padding: 20px;
+}
+form {
+    margin-top: 20px;
+}
+form input, form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #070707;
+    border-radius: 5px;
+  
+}
+
+form button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+/* BUTTONS START  */
+button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #fefeff;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #0b8d16;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+  }
+  
+  button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+  
+  button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding:50px
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover span {
+    color: #ffffff;
+    animation: scaleUp 0.3s ease-in-out;
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(0.95);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+ /* BUTON ENDS HERE */
+
+  /* social media  */
+  ul {
+    list-style: none;
+    background-color: #000;
+  }
+  
+  .example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff; /* Text color changed to white */
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: #000; /* Background color set to black */
+  }
+  
+  .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  
+  .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #020202;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+  }
+  
+  .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .example-2 .icon-content a:hover {
+    color: white;
+  }
+  
+  .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .example-2 .icon-content a:hover .filled {
+    height: 100%;
+  }
+  
+  .example-2 .icon-content a[data-social="linkedin"] .filled,
+  .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+    background-color: #000000;
+  }
+  
+  .example-2 .icon-content a[data-social="github"] .filled,
+  .example-2 .icon-content a[data-social="github"] ~ .tooltip {
+    background-color: #24262a;
+  }
+  
+  .example-2 .icon-content a[data-social="instagram"] .filled,
+  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background: linear-gradient(45deg, #405de6, #5b51db, #b33ab4, #c135b4, #e1306c, #fd1f1f);
+  }
+  
+  .example-2 .icon-content a[data-social="youtube"] .filled,
+  .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+    background-color: #ff0000;
+  }
+  
